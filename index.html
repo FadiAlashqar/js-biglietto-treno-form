@@ -8,7 +8,36 @@
     <title>js-biglietto-treno-form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row text-center my-3">
+                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </div>
+        <form action="">
+            <div class="row row-cols-3 text-center">
+                <div class="col">
+                    <h4>Nome e cognome</h2>
+                    <input type="text" placeholder="Nome e Cognome" id="name-field" required>
+                </div>
+                <div class="col">
+                    <h4>Km da percorrere</h2>
+                    <input type="text" placeholder="Km da percorrere" id="km-field" required>
+                </div>
+                <div class="col">
+                    <h4>Fascia d'et&agrave;</h2>
+                    <select name="" id="age-field">
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Minorenne">Minorenne</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button id="Genera" type="button" class="btn btn-secondary mx-2">Genera</button>
+                    <button id="annulla" type="button" class="btn btn-secondary mx-2">Annulla</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>

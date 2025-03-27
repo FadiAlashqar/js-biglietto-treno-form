@@ -1,0 +1,12 @@
+.style-none{
+    list-style-type: none;
+}
+h1{
+    color: white;
+}
+.strong{
+    font-weight: 500;
+}
+.d-block{
+    display: block;
+}

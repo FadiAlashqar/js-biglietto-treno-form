@@ -2,11 +2,18 @@
 const form = document.querySelector('form');
 const age = document.getElementById('age-field');
 const distance = document.getElementById('km-field');
+const priceSpace = document.getElementById('return-price');
+const button = document.getElementById('Genera');
+const userName = document.getElementById('user-name');
+const enterName = document.getElementById('name-field');
 
 
 // Corpo del programma:
 
-form.addEventListener('click', function () {
+button.addEventListener('click', function (event) {
+    
+    event.preventDefault();
+    
     let price = distance.value * 0.21;
     let finalPrice;
     if (age.value <= 18) {
@@ -18,5 +25,11 @@ form.addEventListener('click', function () {
     else{
         finalPrice = price;
     }
-    console.log(`${finalPrice} €`)
+    
+    priceSpace.innerText = `${finalPrice.toFixed(2)} €`;
+    userName.innerText = enterName.value;
+    
+
 })
+
+

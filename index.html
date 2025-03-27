@@ -7,34 +7,63 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title>js-biglietto-treno-form</title>
 </head>
-<body>
-    <div class="container">
+<body class="bg-danger">
+     <div class="container">
         <div class="row text-center my-3">
-                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </div>
-        <form action="">
-            <div class="row row-cols-3 text-center">
-                <div class="col">
-                    <h4>Nome e cognome</h2>
-                    <input type="text" placeholder="Nome e Cognome" id="name-field" required>
+        <div class="container bg-white">
+                <form action="">
+                    <div class="row row-cols-3 text-center">
+                        <div class="col">
+                            <h4>Nome e cognome</h2>
+                            <input type="text" placeholder="Nome e Cognome" id="name-field" required>
+                        </div>
+                        <div class="col">
+                            <h4>Km da percorrere</h2>
+                            <input type="text" placeholder="Km da percorrere" id="km-field" required>
+                        </div>
+                        <div class="col">
+                            <h4>Fascia d'et&agrave;</h2>
+                                <input type="text" placeholder="Età" id="age-field" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center my-3">
+                            <button id="Genera" type="button" class="btn btn-secondary mx-2">Genera</button>
+                            <button id="annulla" type="button" class="btn btn-secondary mx-2">Annulla</button>
+                        </div>
+                    </div>
+                </form>
+        </div>   
+        <div class="row text-center my-3">
+            <h1>IL TUO BIGLIETTO</h1>
+        </div>         
+        <div class="container bg-white"> 
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>NOME PASSEGGERO:</h4>
+                        <span id="user-name" class="d-block my-4">-</span>
+                    </div>
+                    <div class="col-md-2">
+                       <span class="d-block strong">Offerta</span>
+                       <span class="d-block my-4">Standard</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="d-block strong">Carrozza</span>
+                       <span class="d-block my-4">5</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="d-block strong">Codice CP</span>
+                       <span class="d-block my-4">92911</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="d-block strong">Costo biglietto</span>
+                       <span id="return-price" class="d-block my-4">-</span>
+                    </div>
                 </div>
-                <div class="col">
-                    <h4>Km da percorrere</h2>
-                    <input type="text" placeholder="Km da percorrere" id="km-field" required>
-                </div>
-                <div class="col">
-                    <h4>Fascia d'et&agrave;</h2>
-                        <input type="text" placeholder="Età" id="age-field" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center my-3">
-                    <button id="Genera" type="button" class="btn btn-secondary mx-2">Genera</button>
-                    <button id="annulla" type="button" class="btn btn-secondary mx-2">Annulla</button>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
-    <script src="./js/script.js"></script>
+        <script src="./js/script.js"></script>
 </body>
 </html>
